@@ -3,6 +3,7 @@
 Welcome to my series of tutorials on **Programming in R** tailored for biologists!
 
 ## Chapters:
+- [Introduction:](Introduction/index.md)
 - [Chapter 1: Getting Started with R](chapter1/index.md)
 - [Chapter 2: Data Structures in R](chapter2/index.md)
 - [Chapter 3: Data Import and Export](chapter3/index.md)
