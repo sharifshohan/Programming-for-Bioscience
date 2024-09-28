@@ -7,6 +7,7 @@
 আমার গবেষণাতে আমি মূলত তিনটি ভিন্ন কাজ করছি, এগুলো আপনারা নিচে পেয়ে যাবেন।
 
 ### ১। CELLeBT: Exploring Physical B Cell-T Cell Clonal Interactions Through Single-Cell Multi-Omics  
+[Paper Link](https://www.researchsquare.com/article/rs-4437721/v1)
 [GitHub: CELLeBT](https://github.com/sharifshohan/CELLeBT)  
 *(কাজটি R প্রোগ্রামিং এর মাধ্যমে করা হয়েছে)*
 
