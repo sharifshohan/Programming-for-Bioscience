@@ -32,7 +32,7 @@ R নিজেই একটি প্রোগ্রামিং ভাষা �
 
 নিচে RStudio-এর একটি চিত্র যুক্ত করেছি, যেখানে তিনটি প্রধান অংশ দেখানো হয়েছে:
 
-![RStudio Layout]([https://rstudio.com/wp-content/uploads/2018/10/RStudio-IDE.png](https://github.com/sharifshohan/Programming-for-Bioscience/blob/main/chapter1/rstudio%20pic.png))
+![RStudio Layout](https://github.com/sharifshohan/Programming-for-Bioscience/blob/main/chapter1/rstudio%20pic.png)
 
 **Console, Environment, এবং Output** এর মাধ্যমে আপনি RStudio-এর কাজের পরিবেশ সম্পর্কে একটি ভালো ধারণা পাবেন। কাজ করতে করতে আপনার অনেক বিষয় স্বাভাবিকভাবে পরিষ্কার হয়ে যাবে।
 
@@ -57,4 +57,6 @@ print("Hello World")
 ```
 output
 
-# **Hello World**
+```
+Hello World
+```
