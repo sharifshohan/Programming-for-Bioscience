@@ -40,7 +40,6 @@
 ## [অধ্যায় ১: R প্রোগ্রামিং এর সাথে পরিচিতি (Getting Started with R Programming)](chapter1/index.md)
 - 2.1 R এবং RStudio ইনস্টল করা
 - 2.2 R-এর বেসিক সিনট্যাক্স
-- 2.3 প্রথম কোড লেখা
 
 ## অধ্যায় ২: ডেটা স্ট্রাকচার শিখা (Learning Data Structures in R)
 - 3.1 Vectors, Lists, এবং Matrices
