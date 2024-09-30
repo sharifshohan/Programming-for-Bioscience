@@ -32,47 +32,47 @@
 
 # সূচিপত্র (Table of Contents)
 
-## [প্রস্তাবনা (Introduction)](Introduction/index.md)
+## [সূচনা (Introduction)](Introduction/index.md)
 - ১.১ জীববিজ্ঞান এবং প্রোগ্রামিং-এর সম্পর্ক
 - ১.২ কম্পিউটেশনাল বায়োলজি এবং প্রোগ্রামিং
 - ১.৩ কেন জীববিজ্ঞানীরা প্রোগ্রামিং শিখছেন?
 
-## [ধাপ ১: R প্রোগ্রামিং এর সাথে পরিচিতি (Getting Started with R Programming)](chapter1/index.md)
+## [অধ্যায় ১: R প্রোগ্রামিং এর সাথে পরিচিতি (Getting Started with R Programming)](chapter1/index.md)
 - 2.1 R এবং RStudio ইনস্টল করা
 - 2.2 R-এর বেসিক সিনট্যাক্স
 - 2.3 প্রথম কোড লেখা
 
-## ধাপ ২: ডেটা স্ট্রাকচার শিখা (Learning Data Structures in R)
+## অধ্যায় ২: ডেটা স্ট্রাকচার শিখা (Learning Data Structures in R)
 - 3.1 Vectors, Lists, এবং Matrices
 - 3.2 Data Frames
 - 3.3 জীববিজ্ঞানের ডেটার জন্য এই স্ট্রাকচারগুলোর ব্যবহার
 
-## ধাপ ৩: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
+## অধ্যায় ৩: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
 - 4.1 CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
 - 4.2 প্রসেসড ডেটা এক্সপোর্ট করা
 
-## ধাপ ৪: কন্ডিশনাল স্টেটমেন্টস এবং লুপিং (Conditionals and Looping in R)
+## অধ্যায় ৪: কন্ডিশনাল স্টেটমেন্টস এবং লুপিং (Conditionals and Looping in R)
 - 5.1 কন্ডিশনাল স্টেটমেন্টস (Conditionals)
 - 5.2 লুপিং (Looping in R)
 
-## ধাপ ৫: ফাংশন তৈরি করা (Creating Functions in R)
+## অধ্যায় ৫: ফাংশন তৈরি করা (Creating Functions in R)
 - 6.1 ফাংশন কী? (What are Functions?)
 - 6.2 কিভাবে ফাংশন তৈরি করা হয় (How to Create Functions)
 
-## ধাপ ৬: ডেটা হ্যান্ডলিং (Data Handling with dplyr and tidyverse)
+## অধ্যায় ৬: ডেটা হ্যান্ডলিং (Data Handling with dplyr and tidyverse)
 - 7.1 dplyr এবং এর প্রধান ফাংশন (dplyr and its Key Functions)
 - 7.2 tidyverse ব্যবহার করে ডেটা বিশ্লেষণ (Analyzing Data with tidyverse)
 
-## ধাপ ৭: পরিসংখ্যানিক বিশ্লেষণ (Statistical Analysis in R)
+## অধ্যায় ৭: পরিসংখ্যানিক বিশ্লেষণ (Statistical Analysis in R)
 - 8.1 গড়, মিডিয়ান এবং স্ট্যান্ডার্ড ডেভিয়েশন
 - 8.2 জীববিজ্ঞানের ডেটায় পরিসংখ্যান প্রয়োগ
 
-## ধাপ ৮: ডেটা ভিজুয়ালাইজেশন (Data Visualization in R)
+## অধ্যায় ৮: ডেটা ভিজুয়ালাইজেশন (Data Visualization in R)
 - 9.1 বেসিক প্লট তৈরি করা
 - 9.2 ggplot2 দিয়ে উন্নত ভিজুয়ালাইজেশন
 - 9.3 বারপ্লট, হিস্টোগ্রাম, স্ক্যাটারপ্লট, এবং বক্সপ্লট
 
-## ধাপ ৯: R দিয়ে বায়োইনফরমেটিক্স ডেটা বিশ্লেষণ (Bioinformatics Data Analysis with R)
+## অধ্যায় ৯: R দিয়ে বায়োইনফরমেটিক্স ডেটা বিশ্লেষণ (Bioinformatics Data Analysis with R)
 - 10.1 জেনেটিক ডেটা বিশ্লেষণ করা
 - 10.2 সিকোয়েন্স ডেটা ম্যানিপুলেশন
 
