@@ -117,7 +117,7 @@ Output:
 
 #### উদাহরণ : B cell এবং T cell এর সংখ্যা গুন করা
 ```r
-# Add B cell and T cell counts from a petri dish
+# Multiply B cell and T cell counts from a petri dish
 b_cells <- 1000  # Number of B cells
 t_cells <- 700  # Number of T cells
 total <- b_cells * t_cells
