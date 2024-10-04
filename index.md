@@ -41,10 +41,11 @@
 - 2.1 R এবং RStudio ইনস্টল করা
 - 2.2 R-এর বেসিক সিনট্যাক্স
 
-## অধ্যায় ২: ডেটা স্ট্রাকচার শিখা (Learning Data Structures in R)
-- 3.1 Vectors, Lists, এবং Matrices
-- 3.2 Data Frames
-- 3.3 জীববিজ্ঞানের ডেটার জন্য এই স্ট্রাকচারগুলোর ব্যবহার
+## [অধ্যায় ২: ডেটা স্ট্রাকচার শিখা (Learning Data Structures in R)](chapter2/index.md)
+- 3.1 [Vectors](chapter2/vector/index.md)
+- 3.2 Matrices
+- 3.3 Data Frames
+- 3.4 Lists
 
 ## অধ্যায় ৩: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
 - 4.1 CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
