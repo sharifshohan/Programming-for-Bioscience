@@ -43,7 +43,7 @@
 
 ## [অধ্যায় ২: ডেটা স্ট্রাকচার শিখা (Learning Data Structures in R)](chapter2/index.md)
 - 3.1 [Vectors](chapter2/vector/index.md)
-- 3.2 Matrices
+- 3.2 [Matrices](chapter2/matrix/index.md)
 - 3.3 Data Frames
 - 3.4 Lists
 
