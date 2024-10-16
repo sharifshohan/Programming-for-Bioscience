@@ -42,9 +42,9 @@
 - 2.2 R-এর বেসিক সিনট্যাক্স
 
 ## [অধ্যায় ২: ডেটা স্ট্রাকচার শিখা (Learning Data Structures in R)](chapter2/index.md)
-- 3.1 [Vectors](chapter2/vector/index.md)
-- 3.2 [Matrices](chapter2/matrix/index.md)
-- 3.3 Data Frames
+- [৩.১ Vectors](chapter2/vector/index.md)
+- [৩.২ Matrices](chapter2/matrix/index.md)
+- [৩.৩  Data Frames](chapter2/DataFrame/index.md)
 - 3.4 Lists
 
 ## অধ্যায় ৩: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
