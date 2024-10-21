@@ -74,7 +74,8 @@
 
 ## অধ্যায় ৯: R দিয়ে বায়োইনফরমেটিক্স ডেটা বিশ্লেষণ (Bioinformatics Data Analysis with R)
 - 10.1 জেনেটিক ডেটা বিশ্লেষণ করা
-- 10.2 সিকোয়েন্স ডেটা ম্যানিপুলেশন
+- 10.2 Sequence ডেটা বিশ্লেষণ
+      - [১০.২.১ RNAseq Analysis Part 1](chapter8/RNAseq_analysis_part1/index.md)
 
 ## উপসংহার (Conclusion)
 - 11.1 R-এর মাধ্যমে কী শেখা হলো
