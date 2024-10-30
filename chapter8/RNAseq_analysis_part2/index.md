@@ -212,5 +212,5 @@ cat quants/demo_featurecounts.txt | cut -f1,7 | less
 # [**ফর্ম পূরণ করতে এখানে ক্লিক করুন**](https://forms.gle/6qyRGiE7WSpLJ9SA9)
 
 
-# [Part1 পড়তে এখানে ক্লিক করুন](https://github.com/sharifshohan/Programming-for-Bioscience/blob/main/chapter8/RNAseq_analysis_part2/index.md)
+# [Part1 পড়তে এখানে ক্লিক করুন](https://sharifshohan.github.io/Programming-for-Bioscience/chapter8/RNAseq_analysis_part1/)
 
