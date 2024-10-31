@@ -85,7 +85,8 @@ tar -xvzf subread-2.0.7-macOS-x86_64.tar.gz
 
 ## ডেটা Pre-processing এর ধাপে ধাপে কোড 
 আমরা NGS প্লাটফরম থেকে fastq ডেটা পাই। আমরা সেই ডেটা থেকে শুরু করবো। আমি কাজের সুবিধার্থে একটা ছোট fastq ডেটা তৈরি করেছি যাতে আমরা সহজে পূর্ণ প্রক্রিয়া run করতে পারি। আপনারা চাইলে একই পদ্ধতি ব্যবহার করে আপনাদের বড় deta ও processing করতে পারবেন। 
-এই demo.fastq এই ডেটাটি পেতে এখানে ক্লিক করুন 
+এই demo.fastq এই ডেটাটি পেতে [এখানে ক্লিক করুন](https://drive.google.com/drive/folders/1FG5YVw-hQg5dXn867io7VNPGpUIOl5nC?usp=sharing)
+
 আমি কাজের সুবিধার জন্য এই ব্লগ এ যা লিখি সেটা একটি folder এ রাখি। আমি RNAseq এর কাজের জন্য দরকারি সবগুলো ডেটা RNAseq analysis নামক একটি folder এ রেখেছি। এই ফোল্ডার এ আরও দুটি ফোল্ডার আছে। একটির নামে Data আরেকটি quants। Data folder টিতে আমি demo.fastq fileটি রেখেছি। 
 
 ### ধাপ ১। Terminal দিয়ে আপনি যেই folder এ কাজ করবেন সেই folder এ যাওয়া 
