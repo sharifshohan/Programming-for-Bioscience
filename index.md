@@ -45,7 +45,7 @@
 - [৩.১ Vectors](chapter2/vector/index.md)
 - [৩.২ Matrices](chapter2/matrix/index.md)
 - [৩.৩  Data Frames](chapter2/DataFrame/index.md)
-- 3.4 Lists
+- [৩.৪ Lists](chapter2/List/index.md)
 
 ## অধ্যায় ৩: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
 - 4.1 CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
