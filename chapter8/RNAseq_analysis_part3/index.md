@@ -9,13 +9,15 @@
 RNAseq ডেটা সংগ্রহ করা হয়েছে mammary গ্রন্থি থেকে তিনটি সময়কালে। ১। Pregnancy ২। Lactation ৩। virgin। এক্ষেত্রে mammary গ্রন্থির দুই রকম কোষকে আলাদাভাবে নেওয়া হছেছে। একটি হল Basal আরেকটি হল luminal। নিচের ছবি থেকে হয়ত তাদের অবস্থান আরেকটি পরিষ্কার হবে। 
 
 ![ছবি১](./Slide1.png)
- ডেটা পাওয়ার জন্য এখানে ক্লিক করুন। আপনারা দুইটি ডেটা সেট নামাবেন।
+ আপনারা দুইটি ডেটা সেট নামাবেন।
+ ### Download dataset
+[countdata](https://github.com/sharifshohan/Programming-for-Bioscience/blob/main/chapter8/RNAseq_analysis_part3/GSE60450_LactationGenewiseCounts.txt)
+[Sampleinfo](https://github.com/sharifshohan/Programming-for-Bioscience/blob/main/chapter8/RNAseq_analysis_part3/SampleInfo_Corrected.txt)
+
 ১। Gene Counts: প্রতিটি gene কোনগুলো করে আছে। আপনারা যদি আগের ব্লগটি দেখে থাকেন তাহলে দেখবেন যে এই অংশটি দেখতে কেমন।
 ২। Sample metadata: এখানে sample গুলোর পরিচিতি এবং বৈশিষ্ট্য উল্লেখ করা থাকে। 
 
-### Download dataset
-[countdata](https://github.com/sharifshohan/Programming-for-Bioscience/blob/main/chapter8/RNAseq_analysis_part3/GSE60450_LactationGenewiseCounts.txt)
-[Sampleinfo](https://github.com/sharifshohan/Programming-for-Bioscience/blob/main/chapter8/RNAseq_analysis_part3/SampleInfo_Corrected.txt)
+
 
 আপনারা দুটি ফাইল নামাবেন এবং আপনার কম্পিউটার এর একটি নির্দিষ্ট স্থান এ save (সংরক্ষণ) করে রাখবেন। 
  
