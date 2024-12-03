@@ -127,13 +127,13 @@ The following object is masked from ‘package:S4Vectors’:
 
 ```
 ### কাজ করার জন্য directory Set up করা 
-আপনারা যেই ডেটাসেট download করেছেন সেটাকে একটি নির্দিষ্ট folder এ save করে রাখুন। আমার কম্পিউটার এর ক্ষেত্রে এই স্থানটি হচ্ছে “/Users/mohammads/Downloads/Various person project/Blogging/chapter 8/RNAseq analysis/Part3/”
+আপনারা যে ডেটাসেট download করেছেন সেটাকে একটি নির্দিষ্ট folder এ save করে রাখুন। আমার কম্পিউটার এর ক্ষেত্রে এই স্থানটি হচ্ছে “/Users/mohammads/Downloads/Various person project/Blogging/chapter 8/RNAseq analysis/Part3/”
 আমি এখন setwd ফাংশন ব্যবহার করে ওই স্থানটিতে আমার directory set up করে রাখব। 
 
 ```r
 setwd("/Users/mohammads/Downloads/Various person project/Blogging/chapter 8/RNAseq analysis/Part3/")
 ```
-ডেটা Load করা এবং প্রাথমিকভাবে ডেটার স্ট্রাকচার দেখা 
+### ডেটা Load করা এবং প্রাথমিকভাবে ডেটার স্ট্রাকচার দেখা 
 আমাদের এখানে দুই রকম ফাইল আছে। 
 ১। GSE60450_LactationGenewiseCounts.txt: এটি RNAseq count ডেটা। 
 ২। SampleInfo_Corrected.txt: এর মধ্যে sample এর পরিচিতি এবং বৈশিষ্ট্য উল্লেখ করা আছে। 
@@ -149,7 +149,7 @@ sampleinfo <- read.delim("SampleInfo_Corrected.txt", stringsAsFactors = TRUE)
 
 ```
 ### ডেটার গঠন এবং বৈশিষ্ট্য পর্যালোচনা 
-আমরা ডেটাটি কে একটি পর্যালোচনা করে দেখব। এক্ষেত্রে মূলত দেখা হয় যে আমরা যেভাবে ডেটা কে format করতে চাই সেইভাবে কি সাজানো আছে কি না। যদি না থাকে তাহলে আমাদের কি এবং কোথায় পরিবর্তন করতে হবে। Count data যেহেতু অনেক বড় সেজন্য আমরা head ফাংশন ব্যবহার করবো। এটি ওই ডেটা এর প্রথম ৬ লাইন দেখাবে আমাদের। 
+আমরা ডেটাটি কে একটি পর্যালোচনা করে দেখব। এক্ষেত্রে মূলত দেখা হয় যে আমরা যেভাবে ডেটাকে format করতে চাই সেভাবে কি সাজানো আছে কি না। যদি না থাকে তাহলে আমাদের কি এবং কোথায় পরিবর্তন করতে হবে। Count data যেহেতু অনেক বড় সেজন্য আমরা head ফাংশন ব্যবহার করবো। এটি ওই ডেটা এর প্রথম ৬ লাইন দেখাবে আমাদের। 
 ```r
 #Check first 6 lines of the count data
 head(seqdata)
@@ -220,16 +220,16 @@ Output
 12 MCL1.LF_BC2CTUACXX_CTTGTA_L001_R1    MCL1.LF  luminal  lactate
 
 ```
-এক্ষেত্রে আপনরা দেখতে পাচ্ছেন count ডেটা এর সংখ্যাগুলো সকল sample এ এবং Sample এর নাম, কোন কোষ এবং কোন অবস্থার ডেটা এখানে আছে। 
+এক্ষেত্রে আপনরা দেখতে পাচ্ছেন count ডেটা এর সংখ্যাগুলো সকল sample এ এবং sampleinfo  তে sample এর নাম, কোন কোষ এবং কোন অবস্থার ডেটা এখানে আছে। 
 
-ডেটাকে সঠিক format এ সাজানো
-edgeR package এ বেশ কয়েকটি ফাংশন আছে যা আমাদের ব্যবহার করতে হয়। এক্ষেত্রে একই জিনিস মাথায় রাখতে হবে যে ওই ফাংশনটি ডেটাকে যেভাবে input নিবে আমরা যেন format সেইভাবে করি। 
+### ডেটাকে সঠিক format এ সাজানো
+edgeR package এ বেশ কয়েকটি ফাংশন আছে যা আমাদের ব্যবহার করতে হয়। এক্ষেত্রে একটি জিনিস মাথায় রাখতে হবে যে ওই ফাংশনটি ডেটাকে যেভাবে input নিবে আমরা যেন format সেইভাবে করি। 
 যেমন ধরুন count data এর ক্ষেত্রে format নিচের ছবির মত হতে হবে। 
 
 ![ছবি২](./Slide2.png) 
 
 অর্থাৎ এখানে একদিকে সারি এর নাম এ থাকবে gene এর নাম এবং কলাম এ থাকবে sample এর count।
-আমরা যদি উপড়ে লক্ষ্য করি আমাদের seqdata এর মধ্যে প্রথম কলাম হচ্ছে GeneID আর দ্বিতীয়টি হচ্ছে length। আমরা প্রথমে সারি এর নাম পরিবর্তন করে gene এর নামগুলো বসাব আর প্রথম এবং দ্বিতীয় কলাম বাদ দিয়ে দিব। তাহলে আমাদের seqdata দেখতে উপরের ছবির মত হবে। 
+আমরা যদি উপরে লক্ষ্য করি আমাদের seqdata এর মধ্যে প্রথম কলাম হচ্ছে GeneID আর দ্বিতীয়টি হচ্ছে length। আমরা সারি এর নাম পরিবর্তন করে gene এর নামগুলো বসাব আর প্রথম এবং দ্বিতীয় কলাম বাদ দিয়ে দিব। তাহলে আমাদের seqdata দেখতে উপরের ছবির মত হবে। 
 
 ```r
 #Set the rowname to geneid
@@ -275,7 +275,7 @@ Output
 
 ### Sampleinfo এর ফাইল এর সাথে countdata ফাইল এর sample এর নাম মেলানো
 
-আপনারা উপড়ে দেখেন যে প্রতিটি sample এর নাম একটু উদ্ভট। দেখতে “MCL1.DG_BC2CTUACXX_ACTTGA_L002_R1” এরকম। আমরা যদি sampleinfo এর SampleName দেখি তাহলে দেখব যে “MCL1.DG” এটার মত। আমরা যদি এখন এই বড় “MCL1.DG_BC2CTUACXX_ACTTGA_L002_R1” নাম থেকে প্রথম ৭ টি অক্ষর (.) সহ আলাদা করে নেই তাহলে SampleName এর সাথে সম্পূর্ণভাবে মিলে যায়। এখন আমরা এই কাজটি করবো। 
+আপনারা উপরে দেখতে পাচ্ছেন যে প্রতিটি sample এর নাম একটু উদ্ভট। দেখতে “MCL1.DG_BC2CTUACXX_ACTTGA_L002_R1” এরকম। আমরা যদি sampleinfo এর SampleName দেখি তাহলে দেখব যে “MCL1.DG” এটার মত। আমরা যদি এখন এই বড় “MCL1.DG_BC2CTUACXX_ACTTGA_L002_R1” নাম থেকে প্রথম ৭ টি অক্ষর (.) সহ আলাদা করে নেই তাহলে SampleName এর সাথে সম্পূর্ণভাবে মিলে যায়। এখন আমরা এই কাজটি করবো substr ফাংশন ব্যবহার করে। 
 
 ```r
 # using substr, you extract the characters starting at position 1 and stopping at position 7 of the colnames
@@ -300,7 +300,7 @@ TRUE
 ```
 
 ### Convert counts to DGEList object
-আমরা এই ধাপে DGEList object তৈরি করবো। এটি মূলত edgeR যে package নিয়ে আমরা কাজ করবো তার কাজ করার জন্য দরকার হয়। আপনারা যদি আমার List নিয়ে লিখা অংশে জান তাহলে আপনারা দেখতে পাবেন যে আমি ওইখানে এই DGEList এর মত একটি list এর কথা বলেছি। DGEList object এ একইসাথে আমরা count ডেটা , sample এর পরিচিতি ও তথ্য একইসাথে রাখতে পারি। DGEList ফাংশনটি আরও কিছু কাজ করে যেমন প্রতিটি sample এ library size কেমন সেটাও যুক্ত করবে।
+আমরা এই ধাপে DGEList object তৈরি করবো। এটি মূলত edgeR যে package নিয়ে আমরা কাজ করবো তার কাজ করার জন্য দরকার হয়। আপনারা যদি আমার List নিয়ে লিখা অংশে দেখেন তাহলে আপনারা দেখতে পাবেন যে আমি ওখানে এই DGEList এর মত একটি list এর কথা বলেছি। DGEList object এ একইসাথে আমরা count ডেটা , sample এর পরিচিতি ও তথ্য একইসাথে রাখতে পারি। DGEList ফাংশনটি আরও কিছু কাজ করে যেমন প্রতিটি sample এ library size কেমন সেটাও যুক্ত করবে।
 
 ```r
 #Apply DGEList fucntion on Count Data
@@ -368,7 +368,7 @@ MCL1.LF  luminal.lactate 24657293            1
 
 ### Gene Annotation যোগ করা 
 
-আমাদের ডেটা সঠিকভাবে তৈরির প্রক্রিয়াতে আমরা gene এর বৈশিষ্ট্যগুলো (annotation) যোগ করে নেই। এটার মূল কারণ হচ্ছে অনেক সময় ডেটাগুলো বিভিন্ন format এ থাকে। কখনও হয়ত Entrezid অথবা symbol অথবা gene এর নাম আকারে। আমরা চেষ্টা করবো যেই format এর থাকুক না কেন তারা যেন এমনভাবে থাকে যে আমি সবগুলো format এ পেতে পারি। আমরা যেহেতু এখানে ইঁদুর নিয়ে কাজ করছি আমাদের reference হিসেবে org.Mm.eg.db pacakge ব্যবহার করতে হবে।এখানে বলে নেই আপনারা যদি Human এর sample নিয়ে কজা করেন সেক্ষেত্রে আপনারা org.Hs.eg.db package ব্যবহার করতে পারেন। আমরা কোড এর এই অংশে আমরা এই package ব্যবহার করে gene গুলো annotation করে পূর্বে তৈরি করা DGEList এ নতুন একটি উপাদান আকারে যোগ করে নিতে পারি। 
+আমাদের ডেটা সঠিকভাবে তৈরির প্রক্রিয়াতে আমরা gene এর বৈশিষ্ট্যগুলো (annotation) যোগ করি। এর মূল কারণ হচ্ছে অনেক সময় ডেটাগুলো বিভিন্ন format এ থাকে। কখনও হয়ত Entrezid অথবা symbol অথবা gene এর নাম আকারে। আমরা চেষ্টা করবো যেই format এর থাকুক না কেন তারা যেন এমনভাবে থাকে যে আমি সবগুলো format এ পেতে পারি। আমরা যেহেতু এখানে ইঁদুর নিয়ে কাজ করছি আমাদের reference হিসেবে org.Mm.eg.db pacakge ব্যবহার করতে হবে।এখানে বলে নেই আপনারা যদি Human এর sample নিয়ে কজা করেন সেক্ষেত্রে আপনারা org.Hs.eg.db package ব্যবহার করতে পারেন। আমরা কোড এর এই অংশে আমরা এই package ব্যবহার করে gene গুলো annotation করে পূর্বে তৈরি করা DGEList এ নতুন একটি উপাদান আকারে যোগ করে নিতে পারি। 
 ```r
 #Load the library for mouse
 library(org.Mm.eg.db)
@@ -401,7 +401,7 @@ Output
 শুরু করি CPM কি তা বলে। আমরা যেহেতু অনেকগুলো sample নিয়ে কাজ করছি, সেহেতু sample গুলো এর read counts ভিন্ন হয়। এক্ষেত্রে কোন একটি gene এর count কে ওই sample এর মোট count দিয়ে ভাগ করে ১ মিলিয়ন (10^6) দিয়ে গুণ করা হয়। ফরমুলা টি নিচে দেওয়া হল। 
 ![ছবি৩](./Slide3.png)
 
-CPM এর মাধ্যমে আমরা মূলত দুটি কাজ করি একটি হল সবগুলো sample Nomralise করা আর আরেকটি হল আমরা সবচেয়ে কম expressed gene সরিয়ে ফেলতে পারি। এর ফলে আমরাদের বিশ্লেষণ এর accuracy বেড়ে যায় এবং gene এর সংখ্যা কমে যাওয়ায় processing power দ্রুত হয়ে যায়। আমরা এই বিশ্লেষণ এ CPM ০.৫ ব্যবহার করছি যা ১০-১৫ এর সমতুল্য। এবং একইসাথে ওই gene টি কমপক্ষে যাতে দুটি পৃথক sample এ না থাকলে আমরা ওই gene সরিয়ে ফেলব। 
+CPM এর মাধ্যমে আমরা মূলত দুটি কাজ করি একটি হল সবগুলো sample Nomralise করা আর আরেকটি হল আমরা সবচেয়ে কম expressed gene সরিয়ে ফেলা। এর ফলে আমরাদের বিশ্লেষণ এর accuracy বেড়ে যায় এবং gene এর সংখ্যা কমে যাওয়ায় processing power দ্রুত হয়ে যায়। আমরা এই বিশ্লেষণ এ CPM ০.৫ ব্যবহার করছি যা ১০^-১৫ এর সমতুল্য। এবং একইসাথে ওই gene টি কমপক্ষে যাতে দুটি পৃথক sample এ না থাকলে আমরা ওই gene সরিয়ে ফেলব। 
 
 ```r
 # Obtain CPMs
@@ -475,7 +475,7 @@ abline(h = median(logcounts), col = "blue")
 ![ছবি৪](./Slide4.png) 
 
 ### MDS plot তৈরি করে ডেটা এর Quality Check করা। 
-Multidimensional Scaling (MDS) মূলত আপনার ডেটা এর multi-dimension থেকে 2Dimension এ পরিবর্তন করে। অনেকটা বলতে গেলে আপনার ডেটা যদি ১২ তা কলাম এর হয়, তাহলে MDS এমনভাবে পরিবর্তন করে যে ওই ১২ তা কলাম এর ডেটা কি ২ তা কলাম দিয়ে ব্যাখ্যা করা যায় কি না। আপনারা যারা একটু পরিসংখ্যান অথবা machine learning নিয়ে পরেছেন তারা বুঝতে পারছেন আমি Principle Component Analysis নিয়ে কোথা বলছি। MDS plot RNAseq এ বেশ গুরুত্বপূর্ণ ধাপ। এখানে আপনি বুঝতে পারবেন আপনি যে কাজটি সেটা কি ঠিক কি না। আপনার উপরের ধাপগুলো ঠিকভাবে করে থাকলে আপনি দেখবেন, আপনার ডেটাগুলো সুন্দরভাবে আলাদা হয়েছে। কোড এর অংশের পরে ছবি তে যদি আপনি লক্ষ্য করেন আপনি দেখতে পাচ্ছেন, basal এবং luminal sample গুলো আলাদা ভাবে আছে এবং তাদের মধ্যে overlap হয়নি। এটা বোঝায় যে আপনি যে gene সরিয়েছেন এবং Normalisation করেছেন সেগুলো ভালভাবে কাজ করেছে। 
+Multidimensional Scaling (MDS) মূলত আপনার ডেটা এর multi-dimension থেকে 2Dimension এ পরিবর্তন করে। অনেকটা বলতে গেলে আপনার ডেটা যদি ১২ তা কলাম এর হয়, তাহলে MDS এমনভাবে পরিবর্তন করে যে ওই ১২ তা কলাম এর ডেটা কি ২ তা কলাম দিয়ে ব্যাখ্যা করা যায় কি না। আপনারা যারা একটু পরিসংখ্যান অথবা machine learning নিয়ে পরেছেন তারা বুঝতে পারছেন আমি Principle Component Analysis নিয়ে কথা বলছি। MDS plot RNAseq এ বেশ গুরুত্বপূর্ণ ধাপ। এখানে আপনি বুঝতে পারবেন আপনি যে কাজটি সেটা কি ঠিক কি না। আপনার উপরের ধাপগুলো ঠিকভাবে করে থাকলে আপনি দেখবেন, আপনার ডেটাগুলো সুন্দরভাবে আলাদা হয়েছে। কোড এর অংশের পরে ছবি তে যদি আপনি লক্ষ্য করেন আপনি দেখতে পাচ্ছেন, basal এবং luminal sample গুলো আলাদা ভাবে আছে এবং তাদের মধ্যে overlap হয়নি। এটা বোঝায় যে আপনি যে gene সরিয়েছেন এবং Normalisation করেছেন সেগুলো ভালভাবে কাজ করেছে। 
 ```r
 ## Let's choose purple for basal and orange for luminal
 col.cell <- c("purple", "orange")[sampleinfo$CellType]
@@ -487,7 +487,7 @@ title("MDS Plot by Cell Type")
 
 ![ছবি৫](./Slide5.png)  
 ### Hierarchical Clustering with Heatmaps
-MDS এর জায়গায় আপনি Hierarchical Clustering ব্যবহার করে sample এর মধ্যকার তুলনা করতে পারি। Clustering এর মাধ্যমে আপনি মূলত আপনার একই রকম স্যাম্পলে গুলো একসাথে আছে কি না দেখতে পাবেন। এই ধাপটি আগের ধাপের মত Quality Assure করা আপনার sample গুলোর। আমরা শুরুতে সবচেয়ে বেশি variable gene বের করি। এরপর ওই gene গুলো দিয়ে আমরা দেখি sample গুলো একসাথে আছে কি না। আপনারা যদি নিচের ছবিটি লক্ষ্য করেন তাহলে দেখবেন যে Basal এবং luminal কোষগুলো আলাদাভাবে cluster এ স্থান পেয়েছে। 
+MDS এর জায়গায় আপনি Hierarchical Clustering ব্যবহার করে sample এর মধ্যকার তুলনা করতে পারেন। Clustering এর মাধ্যমে আপনি মূলত আপনার একই রকম স্যাম্পলে গুলো একসাথে আছে কি না দেখতে পাবেন। এই ধাপটি আগের ধাপের মত Quality Assure করা আপনার sample গুলোর। আমরা শুরুতে সবচেয়ে বেশি variable gene বের করি। এরপর ওই gene গুলো দিয়ে আমরা দেখি sample গুলো একসাথে আছে কি না। আপনারা যদি নিচের ছবিটি লক্ষ্য করেন তাহলে দেখবেন যে Basal এবং luminal কোষগুলো আলাদাভাবে cluster এ স্থান পেয়েছে। 
 ```r
 # We estimate the variance for each row in the logcounts matrix
 var_genes <- apply(logcounts, 1, var)
@@ -524,6 +524,7 @@ dev.off()
 
 Reference:
 ১। https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html#Data_files_and_Resources
+
 ২। https://www.nature.com/articles/ncb3117#Sec9
 
 ধন্যবাদ এতটুকু পড়ার জন্য। আপনাদের উপকারে আসলে জানাবেন।  
