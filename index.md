@@ -77,6 +77,7 @@
 - 10.2 Sequence ডেটা বিশ্লেষণ
 - [১০.২.১ RNAseq Analysis Part 1](chapter8/RNAseq_analysis_part1/index.md)
 - [১০.২.২ RNAseq Analysis Part 2](chapter8/RNAseq_analysis_part2/index.md)
+- [১০.২.৩ RNAseq Analysis Part 3](chapter8/RNAseq_analysis_part3/index.md)
 
 ## উপসংহার (Conclusion)
 - 11.1 R-এর মাধ্যমে কী শেখা হলো
