@@ -37,14 +37,15 @@ RNAseq ডেটা সংগ্রহ করা হয়েছে mammary গ্�
 # Installing the packages from BiocManager.
 if (!requireNamespace("BiocManager"))
     install.packages("BiocManager")
-BiocManager::install(c("limma", "edgeR", "Glimma", "org.Mm.eg.db", "gplots", "RColorBrewer"))
+BiocManager::install(c("limma", "edgeR", "Glimma", "org.Mm.eg.db", "gplots", "RColorBrewer","NMF"))
 
 #Loading the Libraries
 library(edgeR) 
 library(limma) 
 library(org.Mm.eg.db) 
 library(gplots) 
-library(RColorBrewer) 
+library(RColorBrewer)
+library(NMF)
 
 ```
 Output
@@ -112,6 +113,18 @@ The following object is masked from ‘package:stats’:
     lowess
 
 > library(RColorBrewer)
+> library(NMF)
+NMF - BioConductor layer [OK] | Shared memory capabilities [NO: bigmemory] | Cores 2/2
+  To enable shared memory capabilities, try: install.extras('
+NMF
+')
+
+Attaching package: ‘NMF’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    nrun
+
 ```
 ### কাজ করার জন্য directory Set up করা 
 আপনারা যেই ডেটাসেট download করেছেন সেটাকে একটি নির্দিষ্ট folder এ save করে রাখুন। আমার কম্পিউটার এর ক্ষেত্রে এই স্থানটি হচ্ছে “/Users/mohammads/Downloads/Various person project/Blogging/chapter 8/RNAseq analysis/Part3/”
