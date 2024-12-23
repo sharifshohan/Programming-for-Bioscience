@@ -165,6 +165,12 @@ GO:0003723                          RNA binding  MF 1026 324  119 7.466301e-32 0
 
 ধন্যবাদ যারা এখান পর্যন্ত এসেছেন আর লেখাগুলো পরেছেন। 
 
+Reference:
+
+১। https://combine-australia.github.io/RNAseq-R/06-rnaseq-day1.html#Data_files_and_Resources
+
+২। https://www.nature.com/articles/ncb3117#Sec9
+
 আপনাদের আগের অংশের মতামত গুলো খুব কাজে লেগেছে আমার। আমি কিছু জিনিস পরিবর্তন করেছি লেখার মধ্যে আর নতুন অংশ যুক্ত করেছি। খুব ভাল লাগবে আপনারা যদি আমাকে প্রতিটি অংশের উপর বলতে পারেন। 
 ### [মতামত জানাতে এখানে ক্লিক করুন](https://forms.gle/EXzTmb9MFo3CJN6g7)
 
