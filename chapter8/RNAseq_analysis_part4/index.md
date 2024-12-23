@@ -73,7 +73,7 @@ R কোড:
 ```r
 fit <- lmFit(v)
 names(fit)
-
+```
 Output
 
 ```r
