@@ -47,13 +47,14 @@
 - [৩.৩  Data Frames](chapter2/DataFrame/index.md)
 - [৩.৪ Lists](chapter2/List/index.md)
 
-## অধ্যায় ৩: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
-- 4.1 CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
-- 4.2 প্রসেসড ডেটা এক্সপোর্ট করা
+## অধ্যায় ৩: কন্ডিশনাল স্টেটমেন্টস এবং লুপিং (Conditionals and Looping in R)
 
-## অধ্যায় ৪: কন্ডিশনাল স্টেটমেন্টস এবং লুপিং (Conditionals and Looping in R)
-- 5.1 কন্ডিশনাল স্টেটমেন্টস (Conditionals)
-- 5.2 লুপিং (Looping in R)
+- 4.1 কন্ডিশনাল স্টেটমেন্টস (Conditionals) 
+- 4.2 লুপিং (Looping in R)
+
+## অধ্যায় ৪: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
+- 5.1 CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
+- 5.2 প্রসেসড ডেটা এক্সপোর্ট করা
 
 ## অধ্যায় ৫: ফাংশন তৈরি করা (Creating Functions in R)
 - 6.1 ফাংশন কী? (What are Functions?)
