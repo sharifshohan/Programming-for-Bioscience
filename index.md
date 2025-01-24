@@ -49,8 +49,8 @@
 
 ## অধ্যায় ৩: কন্ডিশনাল স্টেটমেন্টস এবং লুপিং (Conditionals and Looping in R)
 
-- 4.1 কন্ডিশনাল স্টেটমেন্টস (Conditionals) 
-- 4.2 লুপিং (Looping in R)
+- [৪.১ কন্ডিশনাল স্টেটমেন্টস (Conditionals)](chapter3/conditionals/index.md) 
+- ৪.২ লুপিং (Looping in R)
 
 ## অধ্যায় ৪: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
 - 5.1 CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
