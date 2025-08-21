@@ -116,7 +116,9 @@ dev.off()
 #### ১। কোন কোন serology পরিমাপ করা হয়েছিল এবং কেন?
 
 •  HAI (Hemagglutination Inhibition): ইনফ্লুয়েঞ্জা ভাইরাসের HA প্রোটিনকে ব্লক করতে পারে এমন অ্যান্টিবডির neutralizing ক্ষমতা। পরিমাপ যত বেশি, ততবেশি HA-ফাংশন ব্লক হবে। 
+
 •  NAI (Neuraminidase Inhibition): NA প্রোটিনের এনজাইমেটিক কাজ বন্ধ করার ক্ষমতা। এটাও neutralizing প্রকৃতির।
+
 •  ELISA (binding) AUC: পুরো দৈর্ঘ্যের HA/NA প্রোটিনের সাথে মোট কতটা অ্যান্টিবডি bind করে 
 
 এই তিনটি একসাথে নিয়ে গবেষকের লক্ষ্য ছিল Humoral Immunity কতটা শক্তিশালী , এবং সেটা পরের ইনফ্লুয়েঞ্জা-ঝুঁকির সাথে কীভাবে সম্পর্কিত সেটা বোঝার চেষ্টা করা। পরিমাপগুলো H1/H3 (flu-A) ও B/Victoria, B/Yamagata (Flu-B)এর বিরুদ্ধে নেওয়া হয়েছিল। এখানে HAI ও NAI Inhibition Assay এবং HA/NA ELISA করা হয়।
