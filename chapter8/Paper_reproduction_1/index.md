@@ -817,6 +817,7 @@ plot_models(
   guides(col = "none")
 
 ```
+![Slide13](./slide13.png)
 ### Is it possible to explain who would be sick with flu beforehand based on immune profile
 এখানে গবেষকরা বোঝার চেষ্টা করেছেন য মৌসুম এর শুরুতে যদি আমরা immune profile যানই তাহলে কি আমরা কে অসুশ্ত হবে আর ক হবে না সেটা বলে দিতে পারব?
 এক্ষেত্রে তারা একটি random forest machine learning model ব্যবহার করেছেন। এই মডেলটিতে outcome ঠিক করা হয়েছে Symptomatic influenza (Yes/No)। অর্থাৎ binary outcome। আর input হিশেবে রাখা হয়েছে ৪ টি জিনিস
