@@ -486,7 +486,7 @@ dev.off()
 
 #### 6। Adjusted risk modeling (GLM): “কোন মাপ সত্যিই সুরক্ষার সাথে যুক্ত?”
 এরপর প্রতিটি serology মাপ ধরে logistic regression (GLM) করা হয়। আউটকাম Symptomatic vs Protected। এখানে Symptomatic কে ১ গণনা করা হয়; এবং Age, Sex, BMI, Vaccine-status adjust করা হয়। দেখা যায় যে A(N1), A(N2), B/Victoria-NA, B/Yamagata-NA, এই NAI টাইটারগুলো OR<1 (অর্থাৎ মান যত বাড়ে, অসুস্থ হওয়ার odds কমে → সুরক্ষা)। ELISA-তে A(H1) HA এবং B/Yamagata HA bindingও OR<1 দেখিয়েছে।
-আবার opposite ঘটনা ওঁ দেখা যায়, A(H3) HAI টাইটার OR>1, অর্থাৎ যাদের বেসলাইনে A(H3) HAI বেশি ছিল তাদের Symptomatic হওয়ার odds বেশি দেখা গেছে। এই paper এ এই ঘটনা ব্যাখ্যা করা হয়েছে এভাবে যে আগের মৌসুমে (২০১৭) H3N2-এর প্রাধান্যের কারণে Pre-existing antibody H1N1-প্রধান ২০১৮ মৌসুমে যথেষ্ট neutralizing না হওয়া এবং পুরাপুরি match না করা কে এই ঘটনার কারণ হিশেবে দেখিয়েছেন হিসেবে। 
+আবার opposite ঘটনাও দেখা যায়, A(H3) HAI টাইটার OR>1, অর্থাৎ যাদের বেসলাইনে A(H3) HAI বেশি ছিল তাদের Symptomatic হওয়ার odds বেশি দেখা গেছে। এই paper এ এই ঘটনা ব্যাখ্যা করা হয়েছে এভাবে যে আগের মৌসুমে (২০১৭) H3N2-এর প্রাধান্যের কারণে Pre-existing antibody H1N1-প্রধান ২০১৮ মৌসুমে যথেষ্ট neutralizing না হওয়া এবং পুরাপুরি match না করা কে এই ঘটনার কারণ হিশেবে দেখিয়েছেন। 
 ```r
 library(sjPlot)
 All<-read.csv('Mettelman_Minimum_dataframe.csv', encoding = "utf-8")
