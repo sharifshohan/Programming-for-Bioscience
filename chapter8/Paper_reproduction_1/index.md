@@ -1,7 +1,8 @@
 
-# Baseline innate and T cell populations are correlates of protection against symptomatic influenza virus infection independent of serology Journal – Nature Immunology Impact Factor: 27.6
-## গবেষণার উদ্দেশ্যঃ
+# Baseline innate and T cell populations are correlates of protection against symptomatic influenza virus infection independent of serology 
+## Journal – Nature Immunology,  Impact Factor: 27.6
 ![Slide0](./Slide0.png)
+## গবেষণার উদ্দেশ্যঃ
 এই গবেষণার দেখার চেষ্টা করা হয়েছে যে, ভ্যাক্সিন নেওয়ার পরও কিছু মানুষ ইনফ্লুয়েঞ্জা আক্রান্ত হয়, আবার কেউ হয়না। এর পেছনে কি কারণ হতে পারে। 
 বর্তমানে কোন ভ্যাক্সিন কাজ করে কি করে না সেটা দেখা হয় Antibody (serology) পরিমাপ করে। কিন্তু এই গবেষণায় দেখা গিয়েছে যে, 
 
