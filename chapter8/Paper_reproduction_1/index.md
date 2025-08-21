@@ -56,7 +56,8 @@ status <- ifelse(infection == "Infected", "Positive", "Negative")
 ct <- table(Vaccination = vaccination, Status = status)
 ct
 ```
-Slide1
+![Slide1](./Slide1.png)
+
 Figure1c: এখানে দেখান হয়েছে ভ্যাক্সিন নেওয়া নারী-পুরুষ এর বয়স এর কোন বড় পার্থক্য আছে কি না। কারণ ডেটাতে যদি বয়সের পার্থক্য থাকবে তখন ডেটা ব্যাখ্যা করতে গেলে বয়স ফলাফল কে প্রভাবিত করতে পারে। এখানে দেখা যায় যে Vaccinated vs Unvaccinated দুই গ্রুপ এ নারী-পুরুষ এ বয়সে (significant)পার্থক্য নেই (Wilcoxon P = ০.০৭, ০.৬৩ )
 ```r
 ## Figure 1c: Age distribution by Sex within Vaccine groups 
@@ -84,7 +85,8 @@ pdf("Age Distribution by Sex Within Vaccination Groups.pdf", width = 7, height =
 print(p)
 dev.off()
 ```
-Slide2
+![Slide2](./Slide2.png)
+
 Figure1d: এই figure এ দেখানর চেষ্টা করা হয়েছে নারী-পুরুষ ভেদে কোন Strain দ্বারা আক্রান্ত হওয়ার পার্থক্য আছে কি না। যদি এই Figure এ তারা absolute সংখ্যা দেখিয়েছে, আমার মতে একানে proportion দেখালে ভাল হত, তাহলে তুলনা করা সহজ হুত কারণ আমরা তখন বুঝতে পারতাম যে ১০০ এর মধ্যে কতজন কোন strain দ্বারা আক্রান্ত। আমি এই figure তৈরি করার ক্ষেত্রে তাদের দেওয়া figure তৈরি করেছি। 
 ```r
 # Figure 1d , distribution of Strain acrss sex group
@@ -104,18 +106,21 @@ pdf("Strain vs Sex.pdf", width = 7, height =3)
 print(p)
 dev.off()
 ```
-Slide3
+![Slide3](./Slide3.png)
 
-Baseline Serology -> Protection
+### Baseline Serology -> Protection
 
 এই অংশে গবেষকরা দেখিয়েছেন, মৌসুম শুরুর অ্যান্টিবডি পরিমাপ (HAI, NAI, ELISA AUC) ভবিষ্যতে লক্ষণসহ ফ্লু হওয়া/না-হওয়ার সাথে কীভাবে সম্পর্কিত।
 
-১। কোন কোন serology পরিমাপ করা হয়েছিল এবং কেন?
+#### ১। কোন কোন serology পরিমাপ করা হয়েছিল এবং কেন?
+
 •  HAI (Hemagglutination Inhibition): ইনফ্লুয়েঞ্জা ভাইরাসের HA প্রোটিনকে ব্লক করতে পারে এমন অ্যান্টিবডির neutralizing ক্ষমতা। পরিমাপ যত বেশি, ততবেশি HA-ফাংশন ব্লক হবে। 
 •  NAI (Neuraminidase Inhibition): NA প্রোটিনের এনজাইমেটিক কাজ বন্ধ করার ক্ষমতা। এটাও neutralizing প্রকৃতির।
 •  ELISA (binding) AUC: পুরো দৈর্ঘ্যের HA/NA প্রোটিনের সাথে মোট কতটা অ্যান্টিবডি bind করে 
+
 এই তিনটি একসাথে নিয়ে গবেষকের লক্ষ্য ছিল Humoral Immunity কতটা শক্তিশালী , এবং সেটা পরের ইনফ্লুয়েঞ্জা-ঝুঁকির সাথে কীভাবে সম্পর্কিত সেটা বোঝার চেষ্টা করা। পরিমাপগুলো H1/H3 (flu-A) ও B/Victoria, B/Yamagata (Flu-B)এর বিরুদ্ধে নেওয়া হয়েছিল। এখানে HAI ও NAI Inhibition Assay এবং HA/NA ELISA করা হয়।
-২। Serology মাপগুলো কিভাবে পরস্পরের সাথে সম্পর্কিত। 
+
+#### ২। Serology মাপগুলো কিভাবে পরস্পরের সাথে সম্পর্কিত। 
 গবেষণায় দেখা যায় যে HAI/NAI (inhibition titers) ELIZA AUC (binding titers) মূলত positively correlated। অর্থাৎ যাদের neutralizing টাইটার বেশি তাদের binding ও বেশি। এই অঙ্ঘসের figure আপনারা লক্ষ্য করবেন দেখতে একটু ভিন্ন কারণ আমি তুলনা সবার সাথে করেছি। আপনি একটু কাছে থেকে পর্যবেক্ষণ করলে দেখবেন যে value গুলো একই। 
 ```r
 # Outcome for 2g–2j, 2k–2l: Symptomatic vs Protected (Uninfected + Cryptic)
@@ -206,8 +211,9 @@ pdf("NA protein.pdf", height = 3, width = 4)
 print(p)
 dev.off()
 ```
-Slide4
-৩। ভ্যাক্সিন এর প্রভাব (Vaccinated – Unvaccinated)
+![Slide4](./Slide4.png)
+
+#### ৩। ভ্যাক্সিন এর প্রভাব (Vaccinated – Unvaccinated)
 ২০১৮ সালের ভ্যাক্সিন নেওয়া ব্যক্তিদের HAI/NAI টাইটার বেশি ছিল যা প্রত্যাশিত (ভ্যাকসিন অ্যান্টিবডি বাড়ায়)। ELISA-তেও বেশিরভাগ টার্গেটে binding বেশি ছিল।  তবে বেশ কয়েকটি ব্যতিক্রম ও লক্ষ্য করা যায়। যেমন B/Victoria-HA ও A(N1)-এ ভ্যাকসিনগ্রুপে তুলনামূলক কম binding ধরা পড়ে।
 ```r
 
@@ -410,8 +416,10 @@ pdf("ELIZA NA titer.pdf", height = 4, width = 4)
 print(p)
 dev.off()
 ```
-Slide5 & slide 6
-৪। Outcome ভিত্তিক তুলনাঃ Protected (Uninfected/Cryptic) – Symptomatic
+![Slide5](./Slide5.png)
+
+![Slide6](./Slide6.png)
+#### ৪। Outcome ভিত্তিক তুলনাঃ Protected (Uninfected/Cryptic) – Symptomatic
 এখন প্রশ্ন করা হয়, যারা অসুস্থ হয়নি , তারা কেন হল না। তাদের Antibody এর পরিমাপ কেমন ছিল ?এক্ষেত্রে দেখা যায় যে NAI টাইটার প্রায় সবগুলো টার্গেট এ Protected গ্রুপ এ বেশি। অর্থাৎ NA inhibitory Antibodies লক্ষণ প্রতিরোধ এ গুরুত্বপূর্ণ ভূমিকা রাখে। HA/NA ELISA-র ক্ষেত্রেও কিছু টার্গেটে Protected দলে binding (significantly) বেশি ছিল, বিশেষত A(H1) HA ও B/Yamagata NA binding।
 ```r
 # --------- NA SIDE ---------
@@ -467,10 +475,13 @@ pdf("Fig_2j_NA_ELISA_Symptomatic_vs_Protected.pdf", height = 4, width = 5)
 print(p)
 dev.off()
 ```
-Slide7&8
-5) ডেমোগ্রাফিক ভেরিয়েবল (Age, BMI, Sex) – কেন ও কীভাবে ধরা হলো
+![Slide7](./Slide7.png)
+![Slide8](./Slide8.png)
+
+#### 5। ডেমোগ্রাফিক ভেরিয়েবল (Age, BMI, Sex) – কেন ও কীভাবে ধরা হলো
 অন্যান্য গবেষণায় দেখা গিয়েছে বয়স/শরীরের ওজন/লিঙ্গ ইত্যাদি Humoral immunity আর অসুস্থতার ঝুঁকি প্রভাবিত করতে পারে। এই গবেষণায় তাই logistic regresssion দিয়ে আলাদা করে দেখা হয়েছে। বেশিরভাগ টার্গেটে বড় প্রভাব না থাকলেও কিছু নির্দিষ্ট টার্গেটে Age/BMI এর সাথে সম্পর্ক দেখা গিয়েছে। তাই downstream মডেলিং-এ এগুলো covariate হিসেবে রাখা হয়েছে (adjusted analysis)।
-6) Adjusted risk modeling (GLM): “কোন মাপ সত্যিই সুরক্ষার সাথে যুক্ত?”
+
+#### 6। Adjusted risk modeling (GLM): “কোন মাপ সত্যিই সুরক্ষার সাথে যুক্ত?”
 এরপর প্রতিটি serology মাপ ধরে logistic regression (GLM) করা হয়। আউটকাম Symptomatic vs Protected। এখানে Symptomatic কে ১ গণনা করা হয়; এবং Age, Sex, BMI, Vaccine-status adjust করা হয়। দেখা যায় যে A(N1), A(N2), B/Victoria-NA, B/Yamagata-NA, এই NAI টাইটারগুলো OR<1 (অর্থাৎ মান যত বাড়ে, অসুস্থ হওয়ার odds কমে → সুরক্ষা)। ELISA-তে A(H1) HA এবং B/Yamagata HA bindingও OR<1 দেখিয়েছে।
 আবার opposite ঘটনা ওঁ দেখা যায়, A(H3) HAI টাইটার OR>1, অর্থাৎ যাদের বেসলাইনে A(H3) HAI বেশি ছিল তাদের Symptomatic হওয়ার odds বেশি দেখা গেছে। এই paper এ এই ঘটনা ব্যাখ্যা করা হয়েছে এভাবে যে আগের মৌসুমে (২০১৭) H3N2-এর প্রাধান্যের কারণে Pre-existing antibody H1N1-প্রধান ২০১৮ মৌসুমে যথেষ্ট neutralizing না হওয়া এবং পুরাপুরি match না করা কে এই ঘটনার কারণ হিশেবে দেখিয়েছেন হিসেবে। 
 ```r
@@ -635,8 +646,9 @@ plot_models(
   theme(legend.position = "right", legend.direction = "vertical") +
   guides(col = "none")
 ```
-Slide9
-Baseline immune cell profiles → Protection
+![Slide9](./Slide9.png)
+
+### Baseline immune cell profiles → Protection
 এই অংশে দেখা হয়েছে যে, “মৌসুম শুরুর আগেই যদি কিছু নির্দিষ্ট T cell, B cell বা innate immune cell-এর সংখ্যা  বেশি থাকে, তাহলে ফ্লু হওয়ার ঝুঁকি কি কমে?”
 এবং এই সম্পর্ক কীভাবে ভ্যাক্সিন  নেওয়া না-নেওয়ার উপর নির্ভর করে বদলায় কি না? 
 মৌসুম শুরুর আগেই শরীরের কিছু নির্দিষ্ট immune cell population (যেমন CD8+ effector T cells, dendritic cells, γδ T cells, NK cells) কতটা উপস্থিত ছিল, সেটি পরবর্তীতে ফ্লুতে আক্রান্ত হওয়ার সম্ভাবনার সঙ্গে জড়িত। Vaccinated ও unvaccinated অংশগ্রহণকারীদের আলাদা করে বিশ্লেষণ করে দেখা গেছে, কিছু cell বেশি থাকলে সুরক্ষা দেয় (OR<1), আবার কিছু cell ঝুঁকি বাড়ায় (OR>1)। উদাহরণস্বরূপ, vaccinated গ্রুপে mDC ও CD8+ effector বেশি থাকলে ফ্লু হওয়া কম দেখা গেছে, অন্যদিকে unvaccinated গ্রুপে γδ T cell ও activated NK বেশি থাকলে আক্রান্ত হওয়ার ঝুঁকি বেশি ছিল। সব মিলিয়ে বলতে গেলে, শুধুমাত্র antibody নয়, baseline cellular immunity-ও ফ্লু থেকে সুরক্ষা পাওয়ার সম্ভাবনাকে প্রভাবিত করে।
@@ -695,8 +707,9 @@ print(p)
 dev.off()
 
 ```
-Slide10
-Cryptic infection ও Specific Immmune Signature (Figure 4a)
+![Slide10](./Slide10.png)
+
+### Cryptic infection ও Specific Immmune Signature 
 এই অংশে লেখকেরা বিশ্লেষণ করেছেন এমন কিছু অংশগ্রহণকারীকে যাদের শরীরে influenza ভাইরাসের প্রমাণ (seroconversion) পাওয়া গেছে, কিন্তু তারা অসুস্থ হননি.  এদের বলা হয় cryptic infections। Figure 4a দেখায়, এই cryptic গ্রুপের শরীরে মৌসুমের শুরুতেই বেশি পরিমাণ antibody (HAI, NAI, ELISA AUC) ছিল, তুলনায় যারা symptomatic হয়েছিল তাদের চেয়ে (OR<1)। এর মানে হলো, আগেই থাকা antibody টাইটার (pre-existing immunity) ভাইরাসকে প্রতিরোধ করতে সক্ষম হয়েছিল, যদিও তা রোগের লক্ষণ তৈরি না করেই সুস্থ হয়ে গিয়েছিল।। এই ধরনের “silent immunity” ভবিষ্যতের সুরক্ষামূলক ব্যবস্থার জন্য গুরুত্বপূর্ণ। সুতরাং, Figure 4a ইঙ্গিত দেয় যে শুধু antibody তৈরির ক্ষমতা নয়, baseline antibody-এর মান-ই অনেক সময় নির্ধারণ করে কেউ symptomatic হবে কি না।
 ```r
 Subclinical_Symptomatic<-All%>%filter(inf_positive == 'Pos')
@@ -801,7 +814,7 @@ plot_models(
   guides(col = "none")
 
 ```
-Is it possible to explain who would be sick with influ beforehand based on immune profile
+### Is it possible to explain who would be sick with flu beforehand based on immune profile
 এখানে গবেষকরা বোঝার চেষ্টা করেছেন য মৌসুম এর শুরুতে যদি আমরা immune profile যানই তাহলে কি আমরা কে অসুশ্ত হবে আর ক হবে না সেটা বলে দিতে পারব?
 এক্ষেত্রে তারা একটি random forest machine learning model ব্যবহার করেছেন। এই মডেলটিতে outcome ঠিক করা হয়েছে Symptomatic influenza (Yes/No)। অর্থাৎ binary outcome। আর input হিশেবে রাখা হয়েছে ৪ টি জিনিস
 ১। Baseline Antibody Level
@@ -1105,9 +1118,8 @@ pdf("varimp.pdf", height = 10, width =5)
 plot(varImp(rf_all))
 dev.off()
 ```
-Slide11,12
+![Slide11](./Slide11.png)
+![Slide12](./Slide12.png)
 
 
 
-
-<img width="451" height="694" alt="image" src="https://github.com/user-attachments/assets/d885d10a-fd53-4431-ac6e-97adf6b86a31" />
