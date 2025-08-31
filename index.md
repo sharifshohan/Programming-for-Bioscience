@@ -76,11 +76,13 @@
 ## অধ্যায় ৯: R দিয়ে বায়োইনফরমেটিক্স ডেটা বিশ্লেষণ (Bioinformatics Data Analysis with R)
 - 10.1 জেনেটিক ডেটা বিশ্লেষণ করা
 - 10.2 Sequence ডেটা বিশ্লেষণ
-- [১০.২.১ RNAseq Analysis Part 1](chapter8/RNAseq_analysis_part1/index.md)
-- [১০.২.২ RNAseq Analysis Part 2](chapter8/RNAseq_analysis_part2/index.md)
-- [১০.২.৩ RNAseq Analysis Part 3](chapter8/RNAseq_analysis_part3/index.md)
-- [১০.২.৪ RNAseq Analysis Part 4](chapter8/RNAseq_analysis_part4/index.md)
+- [10.2.1 RNAseq Analysis Part 1](chapter8/RNAseq_analysis_part1/index.md)
+- [10.2.2 RNAseq Analysis Part 2](chapter8/RNAseq_analysis_part2/index.md)
+- [10.2.3 RNAseq Analysis Part 3](chapter8/RNAseq_analysis_part3/index.md)
+- [10.2.4 RNAseq Analysis Part 4](chapter8/RNAseq_analysis_part4/index.md)
 - [10.3 Paper Reproduction 1](chapter8/Paper_reproduction_1/index.md)
+- [10.4.1 Single Cell RNAseq Analysis Part 1](chapter8/Single_cell_RNAseq_part1/index.md)
+
 
 ## উপসংহার (Conclusion)
 - 11.1 R-এর মাধ্যমে কী শেখা হলো
