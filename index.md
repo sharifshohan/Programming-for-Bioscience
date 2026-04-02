@@ -53,12 +53,12 @@
 - [৪.২ লুপিং (Looping in R)](chapter3/Loop/index.md)
 
 ## অধ্যায় ৪: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
-- 5.1 CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
-- 5.2 প্রসেসড ডেটা এক্সপোর্ট করা
+- ৫.১ CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
+- ৫.২ প্রসেসড ডেটা এক্সপোর্ট করা
 
 ## অধ্যায় ৫: ফাংশন তৈরি করা (Creating Functions in R)
-- 6.1 ফাংশন কী? (What are Functions?)
-- 6.2 কিভাবে ফাংশন তৈরি করা হয় (How to Create Functions)
+- [৬.১ ফাংশন কী? (What are Functions?) এবং কিভাবে ফাংশন তৈরি করা হয় (How to Create Functions)](chapter5/Function/index.md)
+
 
 ## অধ্যায় ৬: ডেটা হ্যান্ডলিং (Data Handling with dplyr and tidyverse)
 - 7.1 dplyr এবং এর প্রধান ফাংশন (dplyr and its Key Functions)
