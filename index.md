@@ -82,7 +82,7 @@
 - [10.2.4 RNAseq Analysis Part 4](chapter8/RNAseq_analysis_part4/index.md)
 - [10.3 Paper Reproduction 1](chapter8/Paper_reproduction_1/index.md)
 - [10.4.1 Single Cell RNAseq Analysis Part 1](chapter8/Single_cell_RNAseq_part1/index.md)
-- [10.4.2 Single Cell RNAseq Analysis Part 1](chapter8/Single_cell_RNAseq_part2/index.md)
+- [10.4.2 Single Cell RNAseq Analysis Part 2](chapter8/Single_cell_RNAseq_part2/index.md)
 
 
 ## উপসংহার (Conclusion)
