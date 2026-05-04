@@ -148,11 +148,14 @@ Different UMI → multiple count
 এই logic দিয়েই expression তৈরি হয়।
 ### Count matrix — শেষ output
 Row = gene
+
 Column = cell
+
 Value = count
+
 এই matrix সাধারণত sparse হয়। অনেক zero থাকে।
 এই zero-এর কারণ dropout।
-শেষ কথা
+### শেষ কথা
 এই পুরো process-টা বোঝা মানে শুধু pipeline বোঝা না। এটা বোঝা মানে- আপনি কীভাবে data interpret করছেন, সেটার ভিত্তি বোঝা। আপনি যদি এই অংশটা বুঝে ফেলেন, তাহলে পরের QC, clustering সবকিছু অনেক বেশি logical মনে হবে। আমরা এর পরের অংশে cellranger ব্যবহার করে দেখাব কিভাবে preprocessing করা হয়। 
 
 # আপডেট পাওয়ার জন্য নিবন্ধন করুন (Register for Updates)
