@@ -1,7 +1,7 @@
 
 # Step By Step Single Cell RNAseq Analysis using CellRanger and R (Part 2 out of 6)
 ## Raw sequencing data থেকে count matrix – কিভাবে? 
-আমার লেখার আগের অংশে [Part1](https://sharifshohan.github.io/Programming-for-Bioscience/chapter8/Single_cell_RNAseq_part1/) আপনারা দেখেছেন কেন single-cell RNA-seq দরকার। কেন bulk RNA-seq অনেক সময় যথেষ্ট না, এবং কেন আমরা কোষকে আলাদা করে দেখতে চাই। আমরা জানতাম আমরা কী পেতে চাই, কিন্তু এখন প্রশ্নটা উল্টো করি।
+আমার লেখার আগের অংশে ** [Part1](https://sharifshohan.github.io/Programming-for-Bioscience/chapter8/Single_cell_RNAseq_part1/) ** আপনারা দেখেছেন কেন single-cell RNA-seq দরকার। কেন bulk RNA-seq অনেক সময় যথেষ্ট না, এবং কেন আমরা কোষকে আলাদা করে দেখতে চাই। আমরা জানতাম আমরা কী পেতে চাই, কিন্তু এখন প্রশ্নটা উল্টো করি।
 আমরা যা পাই, সেটা আসলে কী আর সেই জিনিসটা তৈরি হয় কীভাবে?
 এই জায়গাটায় অনেকেই এখানে বেশি সময় দেয় না। একটা ready-made count matrix পাওয়া যায়, সেটা R-এ লোড করে analysis শুরু করে। clustering, visualization, marker gene identification, সবকিছু বেশ সহজ মনে হয়।
 কিন্তু আমি আমার মনে হয় আপনি যদি কিভাবে এই ডেটা তৈরি হয়েছে, এই জিনিস না বুঝেন তাহলে কিছু ভুল থেকে যাবে। 
