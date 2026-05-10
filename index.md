@@ -61,7 +61,7 @@
 
 
 ## অধ্যায় ৬: ডেটা হ্যান্ডলিং (Data Handling with dplyr and tidyverse)
-- 7.1 dplyr এবং এর প্রধান ফাংশন (dplyr and its Key Functions)
+- [dplyr এবং এর প্রধান ফাংশন (dplyr and its Key Functions)](chapter4/Dplyr/index.md)
 - 7.2 tidyverse ব্যবহার করে ডেটা বিশ্লেষণ (Analyzing Data with tidyverse)
 
 ## অধ্যায় ৭: পরিসংখ্যানিক বিশ্লেষণ (Statistical Analysis in R)
