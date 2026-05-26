@@ -64,9 +64,13 @@ Output:
 3        S3   Disease     300     900
 ```
 এখানে:
+
 •	read.csv() → CSV file পড়ার function 
+
 •	"immune_data.csv" → file-এর নাম 
+
 প্রথম কয়েকটি row দেখা
+
 Dataset বড় হলে পুরো table print করা ভালো idea না। তাই আমরা প্রথম কয়েকটি row দেখি:
 ```r
 head(immune_data)
