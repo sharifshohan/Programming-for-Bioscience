@@ -53,7 +53,7 @@
 - [৪.২ লুপিং (Looping in R)](chapter3/Loop/index.md)
 
 ## অধ্যায় ৪: ডেটা ইমপোর্ট এবং এক্সপোর্ট (Data Import and Export in R)
-- ৫.১ CSV এবং Excel ফাইল থেকে ডেটা ইমপোর্ট করা
+- [CSV এবং Excel ফাইল থেকে ডেটা import এবং export করা](chapter4/import_export/index.md)
 - ৫.২ প্রসেসড ডেটা এক্সপোর্ট করা
 
 ## অধ্যায় ৫: ফাংশন তৈরি করা (Creating Functions in R)
