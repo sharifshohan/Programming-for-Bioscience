@@ -225,18 +225,29 @@ write.csv(immune_data,
 ## বাস্তব Bioinformatics Perspective
 বাস্তবে sequencing analysis-এ আমরা প্রায় সবসময় file import/export করি।
 যেমন:
+
 •	Cell Ranger output matrix 
+
 •	metadata table 
+
 •	differential expression result 
+
 •	clonotype annotation 
+
 •	spatial coordinate table 
+
 •	pathway enrichment result 
-একটি analysis-এর বড় অংশই আসলে data management।
-অনেক নতুন learner মনে করেন bioinformatics মানেই machine learning বা complex statistics। কিন্তু বাস্তবে file handling খুব গুরুত্বপূর্ণ skill।
+
+একটি analysis-এর বড় অংশই আসলে data management। অনেক নতুন learner মনে করেন bioinformatics মানেই machine learning বা complex statistics। কিন্তু বাস্তবে file handling খুব গুরুত্বপূর্ণ skill।
+
 কারণ:
+
 ভুল file import → ভুল analysis
+
 ভুল metadata → ভুল biological interpretation
-Wrong sample annotation → পুরো project-এর সমস্যা
+
+Wrong sample annotation → পুরো project-এর সমস্যা 
+
 সুতরাং data handling কোনো “ছোট skill” না। এটি analysis-এর foundation।
 
 
