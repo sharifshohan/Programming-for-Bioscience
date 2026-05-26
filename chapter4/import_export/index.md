@@ -129,14 +129,20 @@ immune_data <- read.csv("/Users/mohammads/Downloads/Various person project/Blogg
 ## Excel File Import করা
 অনেক biological data Excel file হিসেবে আসে।
 যেমন:
+
 •	clinical metadata 
+
 •	patient information 
+
 •	ELISA result 
+
 •	flow cytometry summary 
+
 •	cell count table 
+
 R-এর base package সরাসরি .xlsx file read করতে পারে না। এজন্য package লাগে।
 সবচেয়ে জনপ্রিয় packageগুলোর একটি হলো readxl।
-readxl install করা
+### readxl install করা
 ```r
 install.packages("readxl")
 ```
@@ -145,7 +151,7 @@ install.packages("readxl")
 library(readxl)
 ```
 
-Excel File Import করা
+### Excel File Import করা
 ধরুন file-এর নাম: immune_data.xlsx
 এখন import:
 ```r
