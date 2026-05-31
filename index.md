@@ -61,11 +61,11 @@
 
 ## অধ্যায় ৬: ডেটা হ্যান্ডলিং (Data Handling with dplyr and tidyverse)
 - [dplyr এবং এর প্রধান ফাংশন (dplyr and its Key Functions)](chapter4/Dplyr/index.md)
-- 7.2 tidyverse ব্যবহার করে ডেটা বিশ্লেষণ (Analyzing Data with tidyverse)
+
 
 ## অধ্যায় ৭: পরিসংখ্যানিক বিশ্লেষণ (Statistical Analysis in R)
-- 8.1 গড়, মিডিয়ান এবং স্ট্যান্ডার্ড ডেভিয়েশন
-- 8.2 জীববিজ্ঞানের ডেটায় পরিসংখ্যান প্রয়োগ
+- [Statistical Analysis in R in Biology Part 1](chapter7/Stat_Part1/index.md)
+
 
 ## অধ্যায় ৮: ডেটা ভিজুয়ালাইজেশন (Data Visualization in R)
 - 9.1 বেসিক প্লট তৈরি করা
